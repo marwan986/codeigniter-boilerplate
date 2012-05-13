@@ -32,7 +32,12 @@
   <link rel="stylesheet" href="<?php echo base_url()?>css/<?php echo $c?>">
   <?php endforeach;?>  
 
+  <?php foreach($javascript as $js):?>
+  <script defer src="<?php echo base_url()?>js/<?php echo $js?>"></script>
+  <?php endforeach;?>
   <script src="<?php echo base_url()?>js/libs/modernizr-2.5.3.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="<?php echo base_url()?>js/libs/jquery-1.7.1.min.js"><\/script>')</script>
 
   <?php /* codeigniter-boilerplate: Google Fonts ****************************/ ?>
   <?php foreach($GFont as $f):?>
@@ -61,8 +66,7 @@
   </div> <!--! end of #container -->
 
 
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-  <script>window.jQuery || document.write('<script src="<?php echo base_url()?>js/libs/jquery-1.7.1.min.js"><\/script>')</script>
+
 
 
   <!-- scripts concatenated and minified via ant build script-->
@@ -71,9 +75,7 @@
   <!-- end scripts-->
   
   <?php /* codeigniter-boilerplate: Scripts *********************************/?>
-  <?php foreach($javascript as $js):?>
-  <script defer src="<?php echo base_url()?>js/<?php echo $js?>"></script>
-  <?php endforeach;?>
+  
 
   <script> // Change UA-XXXXX-X to be your site's ID
     window._gaq = [['_setAccount','UAXXXXXXXX1'],['_trackPageview'],['_trackPageLoadTime']];
