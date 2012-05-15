@@ -15,7 +15,7 @@ class home extends BP_Controller{
         parent::__construct();
     }
     public function index(){
-        $this->css = array("BP/homepage.css","slides.css");
+        $this->css = array("BP/homepage.css","slides_standard.css");
         $this->javascript = array("mylibs/slides.min.jquery.js");
        
        

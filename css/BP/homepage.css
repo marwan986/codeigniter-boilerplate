@@ -1,11 +1,12 @@
 body{
-    background-color:#FFFFFF;
+    background-color:#000;
+    background-image: url('../../images/pinstriped_suit.png');
 }
 
 #container {
     margin:0 auto 0 auto;
     position:relative;
-    width:1280px;
+    width:1080px;
     padding:0 20px 20px;
     
     /*border-top:20px solid #222;
@@ -18,6 +19,7 @@ body{
 */
     /*background-image:url("../../images/BP/bg_int.jpg");*/
 }
+
 
 *{
     letter-spacing:1px;
@@ -107,23 +109,42 @@ p, li {
 
 
 #logo{
-   display:block;
+   
    margin: 0;
+   padding: 20px;
+   
+   
 }
 #main{
     min-height: 300px;
-    background-color: #fff;
+    background-color: #FBCC2A;
+    margin: 0 auto;
+    padding: 20px 0;
+    border-top: 4px solid #E4B53C;
+    
 }
 header{
-    width:100%;
-    display:block;
-    padding: 10px 0;
     
+    display:block;
+    padding: 20px;
+    margin: 0 auto;
+    border-bottom: 1px solid #AC8C37;
+    background-color: #fff;
     
 }
+header .wrap{
+    position:relative;
+    margin: 0;
+   
+   /* background-image: url('../../images/mbs_logo.png');
+    background-repeat: no-repeat;
+    */
+}
+
 nav{
-    height:40px;
-    
-   border-bottom: 1px solid #e7e7e7;
+   height: 40px;
+  border-top: 2px dotted #e6ded8;
+border-bottom: 2px dotted #e6ded8;
+padding-top: 5px;
     
 }

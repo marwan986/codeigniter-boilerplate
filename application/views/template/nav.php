@@ -1,6 +1,7 @@
+<div class="wrap">
 <div id="logo">
     
-    <h1>Middlesex Business Supplies</h1>
+    <img alt="mbs_logo" src="<?php echo base_url().'images/mbs_logo.jpg' ?>" />
 </div>
 
 <nav>
@@ -11,3 +12,4 @@
         <li class="<?php echo isActive($page_id,"example")?>"><a href="<?php echo base_url()?>example">contact</a></li>
     </ul>
 </nav>
+</div>
